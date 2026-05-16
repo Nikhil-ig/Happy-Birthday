@@ -130,7 +130,6 @@
             transform: rotateY(-30deg) translateZ(15px);
             transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
         }
-
         .door.partial-right {
             transform: rotateY(30deg) translateZ(15px);
             transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
@@ -338,14 +337,12 @@
             margin-top: 0.5rem;
             pointer-events: none;
         }
-
         .pre-timer-label {
             font-size: 0.6rem;
             letter-spacing: 0.2em;
             color: var(--gold);
             text-transform: uppercase;
         }
-
         .pre-timer-value {
             font-size: 1rem;
             font-weight: 600;
@@ -421,7 +418,6 @@
             pointer-events: auto;
         }
 
-        /* Rest of your original CSS remains exactly the same from here */
         .section {
             margin-bottom: 8rem;
             scroll-margin-top: 2rem;
@@ -684,7 +680,7 @@
             border-radius: 1.4rem;
         }
 
-        .flip-card:hover .flip-inner {
+        .flip-card.flipped .flip-inner {
             transform: rotateY(180deg);
         }
 
@@ -1026,7 +1022,6 @@
             <div class="circle-content"><span class="circle-icon">✦</span><span class="circle-label">open your
                     heart</span></div>
         </button>
-        <!-- PREVIEW TIMER below the circle -->
         <div class="pre-timer" id="preTimer">
             <div class="pre-timer-label">✨ waits until your birthday ✨</div>
             <div class="pre-timer-value" id="preTimerValue">-- -- -- --</div>
@@ -1034,7 +1029,7 @@
         <div class="sparkle-layer" id="sparkles"></div>
     </div>
 
-    <!-- MAIN ROMANTIC CONTENT (unchanged) -->
+    <!-- MAIN ROMANTIC CONTENT -->
     <div class="main-content" id="mainContent">
         <section class="hero section" id="hero">
             <div class="reveal">
@@ -1046,22 +1041,10 @@
                 <div class="timer-container">
                     <div class="timer-label">✨ counting to your magic hour ✨</div>
                     <div class="timer-display" id="timerDisplay">
-                        <div class="timer-unit">
-                            <div class="timer-number" id="days">00</div>
-                            <div class="timer-unit-label">DAYS</div>
-                        </div>
-                        <div class="timer-unit">
-                            <div class="timer-number" id="hours">00</div>
-                            <div class="timer-unit-label">HOURS</div>
-                        </div>
-                        <div class="timer-unit">
-                            <div class="timer-number" id="minutes">00</div>
-                            <div class="timer-unit-label">MINUTES</div>
-                        </div>
-                        <div class="timer-unit">
-                            <div class="timer-number" id="seconds">00</div>
-                            <div class="timer-unit-label">SECONDS</div>
-                        </div>
+                        <div class="timer-unit"><div class="timer-number" id="days">00</div><div class="timer-unit-label">DAYS</div></div>
+                        <div class="timer-unit"><div class="timer-number" id="hours">00</div><div class="timer-unit-label">HOURS</div></div>
+                        <div class="timer-unit"><div class="timer-number" id="minutes">00</div><div class="timer-unit-label">MINUTES</div></div>
+                        <div class="timer-unit"><div class="timer-number" id="seconds">00</div><div class="timer-unit-label">SECONDS</div></div>
                     </div>
                 </div>
             </div>
@@ -1076,7 +1059,7 @@
             <div class="reveal">
                 <div class="letter-card">
                     <div class="letter-text">
-                        <p>My beloved <strong>Besto</strong>,</p>
+                        <p>My beloved <strong>Dilo</strong>,</p>
                         <p style="margin-top:0.8rem;">There are not enough dawns in the world to describe how you make
                             me feel. On your birthday, I don’t just celebrate the day you were born — <span
                                 class="pink-highlight">I celebrate the day my entire existence found its true
@@ -1091,7 +1074,7 @@
                                 thought of you, I would walk in my garden for eternity.”</span> I promise to love you
                             not only today but through all the seasons of forever. You are my greatest adventure, my
                             safest harbor, my most beautiful truth.</p>
-                        <div class="letter-signature">Yours, endlessly.</div>
+                        <div class="letter-signature">Always, completely, irrevocably yours — with every beat of my heart</div>
                     </div>
                 </div>
             </div>
@@ -1104,54 +1087,12 @@
                 <div class="section-divider"></div>
             </div>
             <div class="reasons-grid">
-                <div class="flip-card reveal">
-                    <div class="flip-inner">
-                        <div class="flip-front"><span>💫</span>
-                            <div class="reason-num">01</div>
-                        </div>
-                        <div class="flip-back">Your smile rewrites the stars — it is my favorite universe.</div>
-                    </div>
-                </div>
-                <div class="flip-card reveal">
-                    <div class="flip-inner">
-                        <div class="flip-front"><span>🌸</span>
-                            <div class="reason-num">02</div>
-                        </div>
-                        <div class="flip-back">Your laughter is the melody that heals every shadow.</div>
-                    </div>
-                </div>
-                <div class="flip-card reveal">
-                    <div class="flip-inner">
-                        <div class="flip-front"><span>🌟</span>
-                            <div class="reason-num">03</div>
-                        </div>
-                        <div class="flip-back">The tenderness in your soul makes the world kinder.</div>
-                    </div>
-                </div>
-                <div class="flip-card reveal">
-                    <div class="flip-inner">
-                        <div class="flip-front"><span>🕊️</span>
-                            <div class="reason-num">04</div>
-                        </div>
-                        <div class="flip-back">You love without borders — a rare, breathtaking art.</div>
-                    </div>
-                </div>
-                <div class="flip-card reveal">
-                    <div class="flip-inner">
-                        <div class="flip-front"><span>🌙</span>
-                            <div class="reason-num">05</div>
-                        </div>
-                        <div class="flip-back">Even ordinary moments become magic when you are near.</div>
-                    </div>
-                </div>
-                <div class="flip-card reveal">
-                    <div class="flip-inner">
-                        <div class="flip-front"><span>💖</span>
-                            <div class="reason-num">06</div>
-                        </div>
-                        <div class="flip-back">Because you are simply, perfectly, wonderfully YOU.</div>
-                    </div>
-                </div>
+                <div class="flip-card reveal"><div class="flip-inner"><div class="flip-front"><span>💫</span><div class="reason-num">01</div></div><div class="flip-back">Your smile rewrites the stars — it is my favorite universe.</div></div></div>
+                <div class="flip-card reveal"><div class="flip-inner"><div class="flip-front"><span>🌸</span><div class="reason-num">02</div></div><div class="flip-back">Your laughter is the melody that heals every shadow.</div></div></div>
+                <div class="flip-card reveal"><div class="flip-inner"><div class="flip-front"><span>🌟</span><div class="reason-num">03</div></div><div class="flip-back">The tenderness in your soul makes the world kinder.</div></div></div>
+                <div class="flip-card reveal"><div class="flip-inner"><div class="flip-front"><span>🕊️</span><div class="reason-num">04</div></div><div class="flip-back">You love without borders — a rare, breathtaking art.</div></div></div>
+                <div class="flip-card reveal"><div class="flip-inner"><div class="flip-front"><span>🌙</span><div class="reason-num">05</div></div><div class="flip-back">Even ordinary moments become magic when you are near.</div></div></div>
+                <div class="flip-card reveal"><div class="flip-inner"><div class="flip-front"><span>💖</span><div class="reason-num">06</div></div><div class="flip-back">Because you are simply, perfectly, wonderfully YOU.</div></div></div>
             </div>
         </section>
 
@@ -1176,22 +1117,10 @@
                 <div class="section-divider"></div>
             </div>
             <div class="polaroid-wrapper">
-                <div class="polaroid reveal">
-                    <div class="polaroid-img">🌅</div>
-                    <div class="polaroid-caption">Golden hours</div>
-                </div>
-                <div class="polaroid reveal">
-                    <div class="polaroid-img">☕</div>
-                    <div class="polaroid-caption">Slow mornings</div>
-                </div>
-                <div class="polaroid reveal">
-                    <div class="polaroid-img">✨</div>
-                    <div class="polaroid-caption">Starry whispers</div>
-                </div>
-                <div class="polaroid reveal">
-                    <div class="polaroid-img">💞</div>
-                    <div class="polaroid-caption">Hand in hand</div>
-                </div>
+                <div class="polaroid reveal"><div class="polaroid-img">🌅</div><div class="polaroid-caption">Golden hours</div></div>
+                <div class="polaroid reveal"><div class="polaroid-img">☕</div><div class="polaroid-caption">Slow mornings</div></div>
+                <div class="polaroid reveal"><div class="polaroid-img">✨</div><div class="polaroid-caption">Starry whispers</div></div>
+                <div class="polaroid reveal"><div class="polaroid-img">💞</div><div class="polaroid-caption">Hand in hand</div></div>
             </div>
         </section>
 
@@ -1208,8 +1137,7 @@
                     <div class="cake-middle"></div>
                     <div class="cake-base"></div>
                 </div>
-                <p style="color:var(--text-muted); margin-top:0.5rem;">tap each flame — let your wish rise with the
-                    smoke 🕯️</p>
+                <p style="color:var(--text-muted); margin-top:0.5rem;">tap each flame — let your wish rise with the smoke 🕯️</p>
                 <div class="wish-message" id="wishMsg">✨ May every star conspire to grant you joy beyond measure ✨</div>
             </div>
         </section>
@@ -1235,6 +1163,13 @@
 
     <script>
         (function () {
+            // Helper: safe vibration (short pulse)
+            function vibrate(pattern) {
+                if ('vibrate' in navigator) {
+                    navigator.vibrate(pattern);
+                }
+            }
+
             // Stars
             for (let i = 0; i < 160; i++) { let s = document.createElement('div'); s.className = 'star'; let sz = Math.random() < 0.7 ? 1 : Math.random() < 0.5 ? 2 : 3; s.style.cssText = `left:${Math.random() * 100}%; top:${Math.random() * 100}%; width:${sz}px; height:${sz}px; animation-duration:${2 + Math.random() * 5}s; animation-delay:${Math.random() * 6}s; opacity:${Math.random() * 0.5 + 0.1};`; document.getElementById('stars').appendChild(s); }
 
@@ -1251,10 +1186,11 @@
             function drawFW() { fwParts = fwParts.filter(p => p.life > 0); for (let p of fwParts) { p.x += p.vx; p.y += p.vy; p.vy += 0.06; p.vx *= 0.97; p.life -= p.dec; ctx.save(); ctx.globalAlpha = Math.max(0, p.life); ctx.fillStyle = p.color; ctx.beginPath(); ctx.arc(p.x, p.y, p.sz, 0, Math.PI * 2); ctx.fill(); ctx.restore(); } }
             let fwTimer = null;
             function startFireworks() { if (fwActive) return; fwActive = true; launchFW(); fwTimer = setInterval(() => launchFW(), 450); setTimeout(() => { clearInterval(fwTimer); fwActive = false; }, 7000); }
+
             function animate() { ctx.clearRect(0, 0, w, h); drawParts(); if (fwActive || fwParts.length) drawFW(); requestAnimationFrame(animate); }
             animate();
 
-            // ---------- DOOR LOGIC WITH PREVIEW TIMER & LOCKED ANIMATION ----------
+            // ---------- DOOR LOGIC WITH VIBRATION ----------
             const stage = document.getElementById('doorStage');
             const doorLeft = document.getElementById('doorLeft');
             const doorRight = document.getElementById('doorRight');
@@ -1263,13 +1199,12 @@
             const mainContent = document.getElementById('mainContent');
             const sparklesLayer = document.getElementById('sparkles');
             const preTimerValue = document.getElementById('preTimerValue');
-
-            // Set target birthday (change as needed: year, month-1, day)
-            const targetDate = new Date(2026, 4, 25, 0, 0, 0); // May 25, 2026
+            
+            // Set target birthday (May 25, 2026)
+            const targetDate = new Date(2026, 4, 25, 0, 0, 0);
             let opened = false;
             let partialTimer = null;
 
-            // Update preview timer display
             function updatePreTimer() {
                 const now = new Date();
                 const diff = targetDate - now;
@@ -1281,30 +1216,22 @@
                 const hours = Math.floor((diff % (86400000)) / 3600000);
                 const mins = Math.floor((diff % 3600000) / 60000);
                 const secs = Math.floor((diff % 60000) / 1000);
-                preTimerValue.innerText = `${days}d ${hours.toString().padStart(2, '0')}h ${mins.toString().padStart(2, '0')}m ${secs.toString().padStart(2, '0')}s`;
+                preTimerValue.innerText = `${days}d ${hours.toString().padStart(2,'0')}h ${mins.toString().padStart(2,'0')}m ${secs.toString().padStart(2,'0')}s`;
             }
             updatePreTimer();
             setInterval(updatePreTimer, 1000);
 
-            // Locked animation: doors tease open then close + vibration
             function deniedOpen() {
                 if (partialTimer) clearTimeout(partialTimer);
-                // Add partial open classes
                 doorLeft.classList.add('partial-left');
                 doorRight.classList.add('partial-right');
-                // Vibrate if supported
-                if ('vibrate' in navigator) {
-                    navigator.vibrate(200);
-                }
-                // Small visual feedback: flash seam glow red briefly
-                const originalSeam = seamGlow.style.opacity;
+                vibrate(200); // vibration on denied attempt
                 seamGlow.style.opacity = '0.9';
                 seamGlow.style.background = 'linear-gradient(to bottom, transparent, #ff3366, #ff9966, transparent)';
                 setTimeout(() => {
-                    seamGlow.style.opacity = originalSeam;
+                    seamGlow.style.opacity = '';
                     seamGlow.style.background = '';
                 }, 300);
-                // Close back after 0.5 seconds
                 partialTimer = setTimeout(() => {
                     doorLeft.classList.remove('partial-left');
                     doorRight.classList.remove('partial-right');
@@ -1319,70 +1246,158 @@
 
             function openInvitation() {
                 if (opened) return;
-                // Check if current date is on or after target birthday
                 const now = new Date();
                 if (now < targetDate) {
                     deniedOpen();
                     return;
                 }
                 opened = true;
+                vibrate(100); // gentle vibe on successful open
                 trigger.classList.add('vanish');
                 seamGlow.style.opacity = '0';
                 setTimeout(() => doorLeft.classList.add('open'), 350);
                 setTimeout(() => doorRight.classList.add('open'), 550);
                 setTimeout(() => createEmbers(), 1300);
-                setTimeout(() => {
-                    stage.classList.add('hide');
-                    mainContent.classList.add('visible');
-                    window.scrollTo(0, 0);
-                    startFireworks();
+                setTimeout(() => { 
+                    stage.classList.add('hide'); 
+                    mainContent.classList.add('visible'); 
+                    window.scrollTo(0, 0); 
+                    startFireworks(); 
                     const bgAudio = document.getElementById('bgAudio');
-                    bgAudio.play().catch(() => { });
+                    bgAudio.play().catch(() => {});
                 }, 2600);
             }
 
             trigger.addEventListener('click', openInvitation);
             trigger.addEventListener('touchstart', e => { e.preventDefault(); openInvitation(); });
 
-            // Main content timer (same target date)
-            function updateMainTimer() {
-                const dist = targetDate - new Date();
-                if (dist <= 0) {
-                    ['days', 'hours', 'minutes', 'seconds'].forEach(id => document.getElementById(id).innerText = '00');
-                    return;
-                }
-                document.getElementById('days').innerText = Math.floor(dist / (864e5)).toString().padStart(2, '0');
-                document.getElementById('hours').innerText = Math.floor((dist % 864e5) / 36e5).toString().padStart(2, '0');
-                document.getElementById('minutes').innerText = Math.floor((dist % 36e5) / 6e4).toString().padStart(2, '0');
-                document.getElementById('seconds').innerText = Math.floor((dist % 6e4) / 1e3).toString().padStart(2, '0');
+            // Main content timer
+            function updateMainTimer() { 
+                const dist = targetDate - new Date(); 
+                if (dist <= 0) { 
+                    ['days', 'hours', 'minutes', 'seconds'].forEach(id => document.getElementById(id).innerText = '00'); 
+                    return; 
+                } 
+                document.getElementById('days').innerText = Math.floor(dist / (864e5)).toString().padStart(2, '0'); 
+                document.getElementById('hours').innerText = Math.floor((dist % 864e5) / 36e5).toString().padStart(2, '0'); 
+                document.getElementById('minutes').innerText = Math.floor((dist % 36e5) / 6e4).toString().padStart(2, '0'); 
+                document.getElementById('seconds').innerText = Math.floor((dist % 6e4) / 1e3).toString().padStart(2, '0'); 
             }
-            updateMainTimer();
+            updateMainTimer(); 
             setInterval(updateMainTimer, 1000);
 
-            // Scratch Card
-            const scratchCanvas = document.getElementById('scratchCanvas'); const scratchCard = document.getElementById('scratchCard'); let scratchCtx = scratchCanvas.getContext('2d'); let drawing = false;
-            function resizeScratch() { const rect = scratchCard.getBoundingClientRect(); scratchCanvas.width = rect.width; scratchCanvas.height = rect.height; scratchCtx.fillStyle = '#cfc0da'; scratchCtx.fillRect(0, 0, scratchCanvas.width, scratchCanvas.height); for (let i = 0; i < 160; i++) { scratchCtx.beginPath(); scratchCtx.arc(Math.random() * scratchCanvas.width, Math.random() * scratchCanvas.height, Math.random() * 4 + 1.5, 0, Math.PI * 2); scratchCtx.fillStyle = `rgba(255,225,200,${Math.random() * 0.7 + 0.2})`; scratchCtx.fill(); } scratchCtx.globalCompositeOperation = 'destination-out'; }
-            window.addEventListener('resize', resizeScratch); resizeScratch();
-            function scratchMove(e) { if (!drawing) return; let rect = scratchCanvas.getBoundingClientRect(); let x, y; if (e.touches) { x = (e.touches[0].clientX - rect.left) * (scratchCanvas.width / rect.width); y = (e.touches[0].clientY - rect.top) * (scratchCanvas.height / rect.height); } else { x = (e.clientX - rect.left) * (scratchCanvas.width / rect.width); y = (e.clientY - rect.top) * (scratchCanvas.height / rect.height); } scratchCtx.beginPath(); scratchCtx.arc(x, y, 24, 0, Math.PI * 2); scratchCtx.fill(); }
-            scratchCanvas.addEventListener('mousemove', scratchMove); scratchCanvas.addEventListener('mousedown', () => drawing = true); scratchCanvas.addEventListener('mouseup', () => drawing = false); scratchCanvas.addEventListener('touchmove', e => { e.preventDefault(); scratchMove(e); }); scratchCanvas.addEventListener('touchstart', () => drawing = true); scratchCanvas.addEventListener('touchend', () => drawing = false);
+            // ---------- FLIP CARDS (mobile touch) ----------
+            const flipCards = document.querySelectorAll('.flip-card');
+            flipCards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    card.classList.toggle('flipped');
+                    vibrate(30); // subtle tap feedback
+                });
+                card.addEventListener('touchstart', (e) => {
+                    e.preventDefault();
+                    card.classList.toggle('flipped');
+                    vibrate(30);
+                }, { passive: false });
+            });
 
-            // Candles & Fireworks
+            // ---------- SCRATCH CARD with vibration on start ----------
+            const scratchCanvasElem = document.getElementById('scratchCanvas');
+            const scratchCardDiv = document.getElementById('scratchCard');
+            let scratchCtx = scratchCanvasElem.getContext('2d');
+            let drawing = false;
+            function resizeScratch() { const rect = scratchCardDiv.getBoundingClientRect(); scratchCanvasElem.width = rect.width; scratchCanvasElem.height = rect.height; scratchCtx.fillStyle = '#cfc0da'; scratchCtx.fillRect(0, 0, scratchCanvasElem.width, scratchCanvasElem.height); for (let i = 0; i < 160; i++) { scratchCtx.beginPath(); scratchCtx.arc(Math.random() * scratchCanvasElem.width, Math.random() * scratchCanvasElem.height, Math.random() * 4 + 1.5, 0, Math.PI * 2); scratchCtx.fillStyle = `rgba(255,225,200,${Math.random() * 0.7 + 0.2})`; scratchCtx.fill(); } scratchCtx.globalCompositeOperation = 'destination-out'; }
+            window.addEventListener('resize', resizeScratch); resizeScratch();
+            function scratchMove(e) { if (!drawing) return; let rect = scratchCardDiv.getBoundingClientRect(); let x, y; if (e.touches) { x = (e.touches[0].clientX - rect.left) * (scratchCanvasElem.width / rect.width); y = (e.touches[0].clientY - rect.top) * (scratchCanvasElem.height / rect.height); } else { x = (e.clientX - rect.left) * (scratchCanvasElem.width / rect.width); y = (e.clientY - rect.top) * (scratchCanvasElem.height / rect.height); } scratchCtx.beginPath(); scratchCtx.arc(x, y, 24, 0, Math.PI * 2); scratchCtx.fill(); }
+            function startScratch() { drawing = true; vibrate(40); }
+            function endScratch() { drawing = false; }
+            scratchCanvasElem.addEventListener('mousemove', scratchMove);
+            scratchCanvasElem.addEventListener('mousedown', startScratch);
+            scratchCanvasElem.addEventListener('mouseup', endScratch);
+            scratchCanvasElem.addEventListener('touchmove', e => { e.preventDefault(); scratchMove(e); });
+            scratchCanvasElem.addEventListener('touchstart', startScratch);
+            scratchCanvasElem.addEventListener('touchend', endScratch);
+
+            // ---------- CANDLES with vibration on each blow and final fireworks ----------
             let blown = 0, allBlown = false;
-            function buildCandles() { const container = document.getElementById('candlesRow'); if (!container) return; container.innerHTML = ''; for (let i = 1; i <= 5; i++) { let c = document.createElement('div'); c.className = 'candle'; c.innerHTML = `<div class="flame" data-id="${i}"></div><div class="candle-stick"></div>`; container.appendChild(c); } document.querySelectorAll('.flame').forEach(f => { f.addEventListener('click', () => { if (allBlown || f.classList.contains('out')) return; f.classList.add('out'); blown++; if (blown === 5) { allBlown = true; const msgDiv = document.getElementById('wishMsg'); msgDiv.classList.add('revealed'); msgDiv.innerHTML = "✨ Your wish has been heard by every star, my love. May it bloom forever. ✨"; startFireworks(); } }); }); }
+            function buildCandles() { 
+                const container = document.getElementById('candlesRow'); 
+                if (!container) return; 
+                container.innerHTML = ''; 
+                for (let i = 1; i <= 5; i++) { 
+                    let c = document.createElement('div'); 
+                    c.className = 'candle'; 
+                    c.innerHTML = `<div class="flame" data-id="${i}"></div><div class="candle-stick"></div>`; 
+                    container.appendChild(c); 
+                } 
+                document.querySelectorAll('.flame').forEach(f => { 
+                    f.addEventListener('click', () => { 
+                        if (allBlown || f.classList.contains('out')) return; 
+                        f.classList.add('out'); 
+                        vibrate(50); // vibration per blown candle
+                        blown++; 
+                        if (blown === 5) { 
+                            allBlown = true; 
+                            const msgDiv = document.getElementById('wishMsg'); 
+                            msgDiv.classList.add('revealed'); 
+                            msgDiv.innerHTML = "✨ Your wish has been heard by every star, my love. May it bloom forever. ✨"; 
+                            startFireworks(); 
+                            vibrate([100, 50, 100]); // fireworks vibration pattern
+                        } 
+                    }); 
+                }); 
+            }
             buildCandles();
 
             // Scroll reveal & nav dots
-            const reveals = document.querySelectorAll('.reveal'); const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.12 }); reveals.forEach(r => obs.observe(r));
-            const sections = ['hero', 'letter', 'reasons', 'scratch', 'memories', 'wish', 'finale']; const dotsDiv = document.getElementById('navDots');
+            const reveals = document.querySelectorAll('.reveal'); 
+            const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.12 }); 
+            reveals.forEach(r => obs.observe(r));
+            const sections = ['hero', 'letter', 'reasons', 'scratch', 'memories', 'wish', 'finale']; 
+            const dotsDiv = document.getElementById('navDots');
             sections.forEach((id, idx) => { let d = document.createElement('div'); d.classList.add('dot'); if (idx === 0) d.classList.add('active'); d.addEventListener('click', () => document.getElementById(id).scrollIntoView({ behavior: 'smooth' })); dotsDiv.appendChild(d); });
-            const sectObs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { const active = e.target.id; document.querySelectorAll('.dot').forEach((dot, i) => dot.classList.toggle('active', sections[i] === active)); } }); }, { threshold: 0.45 }); sections.forEach(id => { let el = document.getElementById(id); if (el) sectObs.observe(el); });
+            const sectObs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { const active = e.target.id; document.querySelectorAll('.dot').forEach((dot, i) => dot.classList.toggle('active', sections[i] === active)); } }); }, { threshold: 0.45 }); 
+            sections.forEach(id => { let el = document.getElementById(id); if (el) sectObs.observe(el); });
 
-            // Music button (unchanged)
-            const musicBtn = document.getElementById('musicBtn'); const bgAudio = document.getElementById('bgAudio'); let musicOn = false; let musicToggling = false;
-            musicBtn.addEventListener('click', () => { if (musicToggling) return; musicToggling = true; if (!musicOn) { if (!bgAudio.src || bgAudio.src === window.location.href) { alert("✨ Add a gentle melody URL in <audio> src — for a soft birthday lullaby ✨"); musicToggling = false; return; } musicOn = true; musicBtn.innerHTML = '♪'; bgAudio.play().catch(() => { musicOn = false; musicBtn.innerHTML = '♫'; }).finally(() => { musicToggling = false; }); } else { musicOn = false; musicBtn.innerHTML = '♫'; bgAudio.pause(); musicToggling = false; } });
+            // Music button
+            const musicBtn = document.getElementById('musicBtn'); 
+            const bgAudio = document.getElementById('bgAudio'); 
+            let musicOn = false; 
+            let musicToggling = false;
+            musicBtn.addEventListener('click', () => { 
+                if (musicToggling) return; 
+                musicToggling = true; 
+                if (!musicOn) { 
+                    if (!bgAudio.src || bgAudio.src === window.location.href) { 
+                        alert("✨ Add a gentle melody URL in <audio> src — for a soft birthday lullaby ✨"); 
+                        musicToggling = false; 
+                        return; 
+                    } 
+                    musicOn = true; 
+                    musicBtn.innerHTML = '♪'; 
+                    bgAudio.play().catch(() => { musicOn = false; musicBtn.innerHTML = '♫'; }).finally(() => { musicToggling = false; }); 
+                } else { 
+                    musicOn = false; 
+                    musicBtn.innerHTML = '♫'; 
+                    bgAudio.pause(); 
+                    musicToggling = false; 
+                } 
+            });
 
-            // Heartbeat vibration for finale
-            const finaleSec = document.getElementById('finale'); if (finaleSec && 'vibrate' in navigator) { const vibeObs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting && !window._vibeDone) { window._vibeDone = true; navigator.vibrate([80, 60, 120]); setTimeout(() => navigator.vibrate([70, 50, 100]), 600); } }); }, { threshold: 0.5 }); vibeObs.observe(finaleSec); }
+            // Heartbeat vibration for finale (only once, and with pattern)
+            const finaleSec = document.getElementById('finale'); 
+            if (finaleSec && 'vibrate' in navigator) { 
+                const vibeObs = new IntersectionObserver(entries => { 
+                    entries.forEach(e => { 
+                        if (e.isIntersecting && !window._vibeDone) { 
+                            window._vibeDone = true; 
+                            vibrate([80, 60, 120]); 
+                            setTimeout(() => vibrate([70, 50, 100]), 600); 
+                        } 
+                    }); 
+                }, { threshold: 0.5 }); 
+                vibeObs.observe(finaleSec); 
+            }
         })();
     </script>
 </body>
